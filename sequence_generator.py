@@ -178,10 +178,10 @@ def generate_song(sequence, model, granurality):
     return generator.current_midi
 
 
-if __name__ == '__main__':
-    os.chdir("models/")
-    blocks = generate_vocab(length=3, variability=1)
-    sequence = generate_sequence(length=3, blocks=blocks)
-    print(sequence)
-    generate_song(sequence, model=0, granurality=1)
-    print(sequence)
+# if __name__ == '__main__':
+#     os.chdir("models/")
+#     blocks = generate_vocab(length=3, variability=1)
+#     sequence = generate_sequence(length=3, blocks=blocks)
+#     print(sequence)
+#     generate_song(sequence, model=0, granurality=1)
+#     print(sequence)
